@@ -1,11 +1,11 @@
-import dotenv from 'dotenv';
+import dotenv from 'dotenv'
 
-dotenv.config();
+dotenv.config()
 
 export const config = {
   puppeteerLaunchOptions: {
-    headless: process.env.PUPPETEER_HEADLESS === 'true', 
-    slowMo: parseInt(process.env.PUPPETEER_SLOWMO || '0'), 
+    headless: process.env.PUPPETEER_HEADLESS === 'true',
+    slowMo: parseInt(process.env.PUPPETEER_SLOWMO || '0'),
   },
-  pdfStorageDir: process.env.PDF_STORAGE_DIR || './uploads', 
-};
+  pdfStorageDir: process.env.PDF_STORAGE_DIR || './uploads',
+}
